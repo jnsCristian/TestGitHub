@@ -1,4 +1,4 @@
-This is  a testtxt for git
+This is  a test txt for git
 =====================
 
-My message
+My message for andreea:nothing :p
