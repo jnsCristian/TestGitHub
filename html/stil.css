@@ -47,7 +47,7 @@ footer{
 }
 .custom{
 	padding-right:50px;
-	padding-left:100px;
+	padding-left:400px;
 }
 .custom2{
 	padding-right:100px;
@@ -84,8 +84,8 @@ h2:after {
 }
 .useless{
 	text-align:center;
-	padding-right:100px;
-	padding-left:100px;
+	padding-right:7%;
+	padding-left:7%;
 	padding-top:10px;
 	padding-bottom:10px;
 	font-size: 20px;
@@ -93,8 +93,8 @@ h2:after {
 }
 .useless1{
 	text-align:center;
-	padding-right:100px;
-	padding-left:100px;
+	padding-right:10%;
+	padding-left:10%;
 	padding-top:10px;
 	padding-bottom:10px;
 	font-size: 10px;
