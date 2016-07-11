@@ -82,3 +82,33 @@ h2:after {
     left: 0.5em;
     margin-right: -50%;
 }
+.useless{
+	text-align:center;
+	padding-right:100px;
+	padding-left:100px;
+	padding-top:10px;
+	padding-bottom:10px;
+	font-size: 20px;
+
+}
+.useless1{
+	text-align:center;
+	padding-right:100px;
+	padding-left:100px;
+	padding-top:10px;
+	padding-bottom:10px;
+	font-size: 10px;
+
+}
+
+button{
+	text-align:center;
+	background-color:black;
+	border-color:black;
+	color:white;
+		padding-top:10px;
+	padding-bottom:10px;
+		padding-right:35x;
+	padding-left:7px;
+}
+
