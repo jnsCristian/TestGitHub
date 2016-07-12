@@ -34,14 +34,7 @@ footer{
 	padding-top:2%;
 	padding-bottom:2%;
 }
-.meniu{
-	
-}
-.meniu_footer{
-	color:white;
-	text-align:center;
-	display:none;
-}
+
 button{
 		text-align:center;
 	background-color:black;
@@ -78,21 +71,23 @@ button{
 	
 }
 div#large{
-	width:80%;
-	height:500px;
+	height:400px;
+	
 }
 div#one {
-    
-	padding-right:17%;
-    float: left;
+    width:20%;
+	float:left;
+	height:200px;
+	
 }
 div#two {
-  
+   width:20%;
    float:left;
-
+	margin-left:20%;
 }
 div#three {
-	
+	width:20%;
    float:left;
 
+margin-left:20%;
 }

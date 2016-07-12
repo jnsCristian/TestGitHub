@@ -4,17 +4,32 @@
 		<title>Home Page</title>
 		<link href="stilizare.css" type="text/css" rel="stylesheet" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+		<link rel="stylesheet" media="(max-width:500px)" href="small.css"> 
 		<script>
 		$(document).ready(function(){
 			$(window).resize(function(){
 				var a = $(window).width();
-				if(a<481){
-					$(".meniu").hide();
-					$(".meniu_footer").show();
+				if(a<450){
+					$("#meniu").hide();
+					$("#meniu_footer").show();
+					
+					
 				}
-				if(a>=481){
-					$(".meniu").show();
-					$(".meniu_footer").hide();
+				if(a>=450){
+					$("#meniu").show();
+					$("#meniu_footer").hide();
+					
+					
+				}
+				if(a<1189){
+				$("#mes").show();
+					$("#mess").show();
+					$("#mes1").hide();
+				}
+				if(a>=1189){
+				$("#mes").hide();
+					$("#mess").hide();
+					$("#mes1").show();
 				}
 			});
 		});
@@ -23,7 +38,7 @@
 	<header >
 		
 		<img style="padding-left:20%;"  src="en.png" >
-		<div class="meniu">
+		<div id="meniu">
 		<ul>
 			<li href="index.v2.html">HOME</li>
 			<li>ABOUT</li>
@@ -60,6 +75,30 @@ Letraset sheets containing Lorem Ipsum passages,and more recently with desktop p
 			<div class="line">PHOTOS</div>
 			<br>
 			<br>
+			<div id="large">
+			<div id="one"><img src="1.jpg" border="5">
+			<h1>LOREM IPSUM IS SIMPLY DUMMY TEXT</h1>
+			<h5>Lorem Ipsum is simply dummy text.Lorem Ipsum is simply dummy text.Lorem Ipsum is simply dummy text.</h5>
+			</div>
+			<div id="two"><img src="1.jpg" border="5">
+			<h1>LOREM IPSUM IS SIMPLY DUMMY TEXT</h1>
+			<h5>Lorem Ipsum is simply dummy text.Lorem Ipsum is simply dummy text.Lorem Ipsum is simply dummy text.</h5></div>
+			<div id="three"><img src="1.jpg" border="5">
+			<h1>LOREM IPSUM IS SIMPLY DUMMY TEXT</h1>
+			<h5>Lorem Ipsum is simply dummy text.Lorem Ipsum is simply dummy text.Lorem Ipsum is simply dummy text.</h5></div>
+			</div>
+			<div id="large">
+			<div id="one"><img src="1.jpg" border="5">
+			<h1>LOREM IPSUM IS SIMPLY DUMMY TEXT</h1>
+			<h5>Lorem Ipsum is simply dummy text.Lorem Ipsum is simply dummy text.Lorem Ipsum is simply dummy text.</h5>
+			</div>
+			<div id="two"><img src="1.jpg" border="5">
+			<h1>LOREM IPSUM IS SIMPLY DUMMY TEXT</h1>
+			<h5>Lorem Ipsum is simply dummy text.Lorem Ipsum is simply dummy text.Lorem Ipsum is simply dummy text.</h5></div>
+			<div id="three"><img src="1.jpg" border="5">
+			<h1>LOREM IPSUM IS SIMPLY DUMMY TEXT</h1>
+			<h5>Lorem Ipsum is simply dummy text.Lorem Ipsum is simply dummy text.Lorem Ipsum is simply dummy text.</h5></div>
+			</div>
 		</section>
 		<section style="background-color:red;">
 			<div class="line">CONTACT US</div>
@@ -73,10 +112,14 @@ Letraset sheets containing Lorem Ipsum passages,and more recently with desktop p
 <input style="margin-bottom:5px;width: 300px;" type="text" name="fname" value="Email">
 <div style="color:black;margin-bottom:5px";>Contact Phone</div>
 <input style="margin-bottom:5px;width: 300px;" type="text" name="fname" value="Phone">
+
+<div id="mes" style="color:black;margin-bottom:5px;display:none";>Message</div>
+<input id="mess" style="margin-bottom:5px;width: 300px;display:none;" type="text" name="fname" value="Message">
+
 </div>
-<div style="float:right">
-<div style="color:black;margin-bottom:5px;";>Message</div>
-<input style="margin-bottom:5px;width: 300px;" type="text" name="fname" value="Message">
+<div id="mes1" style="float:right;">
+<div  style="color:black;margin-bottom:5px;";>Message</div>
+<input  style="margin-bottom:5px;width: 300px;" type="text" name="fname" value="Message">
 </div>
 <div>
 <button type="button" style="background-color:green;text-align:center;width:300px;border-color:green;">Send Message</button>
@@ -85,8 +128,8 @@ Letraset sheets containing Lorem Ipsum passages,and more recently with desktop p
 </div>
 		</section>		
 	</body>
-	<footer>
-		<div class="meniu_footer"  >
+	<footer text-align:"center" style="color:white;">
+		<div id="meniu_footer"  >
 			<h4 href="index.html">HOME</h4>
 			<h4>ABOUT</h4>
 			<h4>PHOTOS</h4>
