@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home Page</title>
+		<link href="stilizare.css" type="text/css" rel="stylesheet" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+		<script>
+		$(document).ready(function(){
+			$(window).resize(function(){
+				var a = $(window).width();
+				if(a<481){
+					$(".meniu").hide();
+					$(".meniu_footer").show();
+				}
+				if(a>=481){
+					$(".meniu").show();
+					$(".meniu_footer").hide();
+				}
+			});
+		});
+	</script>
+	</head> 
+	<header >
+		
+		<img style="padding-left:20%;"  src="en.png" >
+		<div class="meniu">
+		<ul>
+			<li href="index.v2.html">HOME</li>
+			<li>ABOUT</li>
+			<li>PHOTOS</li>
+			<li>CONTACT US</li>
+		</ul>
+		</div>
+	</header>
+	<body>
+		<section>
+			<h1>LOREM IPSUM</h1>
+			<h4>Lorem Ipsum is simply dummy text of the</h4>
+			<h4>printing and typesetting industry</h4>
+			<br >
+			<br>
+			<button type="button">Read</button>
+		</section>
+		<section style="background-color:white;color:black;">
+			<div class="line">ABOUT US</div>
+			<h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+when an unknown printer took a galley of type and 
+scrambled it to make a type specimen book.It has survived only five centuries, but also the leap into electronic typesetting,remaining essentially unchanged.It was popularised in the 1960s with the release of
+Letraset sheets containing Lorem Ipsum passages,and more recently with desktop publishing software like Aldus PageMaker versions of Lorem Ipsum
+
+</h4>
+<h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+when an unknown printer took a galley of type and 
+scrambled it to make a type specimen book.It has survived only five centuries, but also the leap into electronic typesetting,remaining essentially unchanged.It was popularised in the 1960s with the release of
+Letraset sheets containing Lorem Ipsum passages,and more recently with desktop publishing software like Aldus PageMaker versions of Lorem Ipsum
+
+</h4>
+		</section>
+		<section>
+			<div class="line">PHOTOS</div>
+			<br>
+			<br>
+		</section>
+		<section style="background-color:red;">
+			<div class="line">CONTACT US</div>
+<div form class=form style="text-align:left;padding:5%;";>
+<h1 style="text-align:center;color:black;height=42 ;width=42";>Endava 2016!</h1> 
+<form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+<div>
+<div style="color:black;margin-bottom:5px";>Your Name*</div>
+<input style="margin-bottom:5px;width: 300px;" type="text" name="fname" value="Name">
+<div style="color:black;margin-bottom:5px";>Your Email*</div>
+<input style="margin-bottom:5px;width: 300px;" type="text" name="fname" value="Email">
+<div style="color:black;margin-bottom:5px";>Contact Phone</div>
+<input style="margin-bottom:5px;width: 300px;" type="text" name="fname" value="Phone">
+</div>
+<div style="float:right">
+<div style="color:black;margin-bottom:5px;";>Message</div>
+<input style="margin-bottom:5px;width: 300px;" type="text" name="fname" value="Message">
+</div>
+<div>
+<button type="button" style="background-color:green;text-align:center;width:300px;border-color:green;">Send Message</button>
+</div>
+</form>
+</div>
+		</section>		
+	</body>
+	<footer>
+		<div class="meniu_footer"  >
+			<h4 href="index.html">HOME</h4>
+			<h4>ABOUT</h4>
+			<h4>PHOTOS</h4>
+			<h4>CONTACT US</h4>
+		</div>
+		<img src="twi.png" style="width:20px;height:20px;">
+		<img src="face.png" style="width:20px;height:20px;">
+		<img src="g+.png" style="width:20px;height:20px;">
+		<img src="git.png" style="width:20px;height:20px;">
+		<h4 style="color:white;">Internship Endava 2016</h4>
+	</footer>
+
+
+</html>

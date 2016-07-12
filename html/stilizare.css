@@ -1,0 +1,98 @@
+
+ul{
+	text-align:right;
+	list-style-type: none;
+	padding-right:20%;
+}
+li{
+	display:inline;
+	padding:1%;
+}
+header{
+	
+	border-top-style:solid;
+	border-bottom-style:solid;
+	border-color:grey;
+	padding-bottom:1%;
+	padding-top:1%;
+	margin-bottom:1%;
+	margin-top:1%;
+}
+section{
+	padding-left:20%;
+	padding-right:20%;
+	padding-top:2%;
+	padding-bottom:2%;
+	background-color:#30c3a6;;
+	text-align:center;
+	color:white;
+}
+footer{
+	background-color:black;
+	text-align:right;
+	padding-right:20%;
+	padding-top:2%;
+	padding-bottom:2%;
+}
+.meniu{
+	
+}
+.meniu_footer{
+	color:white;
+	text-align:center;
+	display:none;
+}
+button{
+		text-align:center;
+	background-color:black;
+	border-color:black;
+	color:white;
+		padding-top:10px;
+	padding-bottom:10px;
+		padding-right:35x;
+	padding-left:7px;
+}
+.line {
+    overflow: hidden;
+    text-align: center;
+}
+.line:before,
+.line:after {
+    background-color: grey;
+    content: "";
+    display: inline-block;
+    height: 3px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+.line:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+.line:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+.photo{
+	
+}
+div#large{
+	width:80%;
+	height:500px;
+}
+div#one {
+    
+	padding-right:17%;
+    float: left;
+}
+div#two {
+  
+   float:left;
+
+}
+div#three {
+	
+   float:left;
+
+}

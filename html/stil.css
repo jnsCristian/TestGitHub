@@ -111,9 +111,16 @@ button{
 	
 	
 }
+table{
+	width:100%;
+	border-color:black;
+	border-width:5px;
+}
 
-
-
-
-
-
+@media screen and (max-width: 500px) 
+{
+	table
+	{
+    	width: 5%;
+	} 
+}
