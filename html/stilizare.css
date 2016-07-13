@@ -94,3 +94,19 @@ margin-left:20%;
 }
 
 
+div#meniu_footer{
+	display:none;
+}
+div#meniu{
+	display:inline;
+}
+
+@media screen and (max-device-width: 500px) 
+{
+div#meniu_footer{
+	display:inline;
+}
+div#meniu{
+	display:none;
+}
+}
