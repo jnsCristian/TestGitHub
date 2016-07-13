@@ -23,6 +23,13 @@
 				}
 			});
 		});
+		function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
 	</script>
 	</head> 
 	<header >
@@ -122,7 +129,7 @@ Letraset sheets containing Lorem Ipsum passages,and more recently with desktop p
 <form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">
 <div>
 <div style="color:black;margin-bottom:5px";>Your Name*</div>
-<input style="margin-bottom:5px;width: 300px;" type="text" name="fname" value="Name">
+<input style="margin-bottom:5px;width: 300px;" type="text" name="fname" value="Name" >
 <div style="color:black;margin-bottom:5px";>Your Email*</div>
 <input style="margin-bottom:5px;width: 300px;" type="text" name="fname" value="Email">
 <div style="color:black;margin-bottom:5px";>Contact Phone</div>
@@ -137,7 +144,7 @@ Letraset sheets containing Lorem Ipsum passages,and more recently with desktop p
 <input  style="margin-bottom:5px;width: 300px;" type="text" name="fname" value="Message">
 </div>
 <div>
-<button type="button" style="background-color:green;text-align:center;width:300px;border-color:green;">Send Message</button>
+<button type="button" style="background-color:green;text-align:center;width:300px;border-color:green;" action="demo_form.asp" onsubmit="return validateForm()" method="post">Send Message</button>
 </div>
 </form>
 </div>
