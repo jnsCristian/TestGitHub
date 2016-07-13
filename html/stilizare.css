@@ -92,7 +92,9 @@ div#three {
 
 margin-left:20%;
 }
-
+div#large1 {
+	display:none;
+}
 
 div#meniu_footer{
 	display:none;
@@ -108,5 +110,15 @@ div#meniu_footer{
 }
 div#meniu{
 	display:none;
+}
+div#large{
+	display:none;
+}
+div#large1{
+	display:inline;
+	text-align:center;
+}
+div#useless{
+	height:2200px;
 }
 }
