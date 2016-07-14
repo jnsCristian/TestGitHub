@@ -23,12 +23,50 @@
 				}
 			});
 		});
-		function validateForm() {
-    var x = document.forms["myForm"]["fname"].value;
-    if (x == null || x == "") {
-        alert("Name must be filled out");
-        return false;
-    }
+		
+		</script>
+		<script>
+		function userForm(){
+	var data=document.forms.formUser.getElementsByTagName("input");
+	var messageForUser="";
+	
+	if ( data[0].value == ''|| data[0].value==null){
+		messageForUser=messageForUser+"Please specify your NAME!";
+	}
+	
+	if(data[1].value=='' || data[1].value==null){
+		messageForUser=messageForUser+'\n'+"Please specify your E-MAIL!";
+	}
+	
+	if(data[3].value==''){
+		messageForUser=messageForUser+'\n'+"Please specify a MESSAGE!";
+	}
+	//verify if the name is a string, the phone number a number and the email is a correct one 
+	var re = /^[A-Za-z]+$/;
+	var re1=/[-!$%^&*()_+|~=`{}\[\]:";'<>?,.\/]/;
+	
+	if(!re.test(data[0].value)){
+		messageForUser=messageForUser+'\n'+"Your name isn't a string!";
+	}
+	
+	if(re.test(data[2].value)){
+		messageForUser=messageForUser+'\n'+"Your phone number isn't a corect one!";
+	}
+	
+	if(re1.test(data[1].value)){
+	messageForUser=messageForUser+'\n'+"Your email isn't a corect one!";
+	}
+	
+	
+	if (messageForUser == ""){
+		alert("Your message had been sent!");
+	}else{
+		alert(messageForUser);
+	}
+	
+	
+	
+};
 }
 	</script>
 	</head> 
@@ -126,27 +164,27 @@ Letraset sheets containing Lorem Ipsum passages,and more recently with desktop p
 			<div id="contact1" class="line">CONTACT US</div>
 <div form class=form style="text-align:left;padding:5%;";>
 <h1 style="text-align:center;color:black;height=42 ;width=42";>Endava 2016!</h1> 
-<form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">
-<div>
-<div style="color:black;margin-bottom:5px";>Your Name*</div>
-<input style="margin-bottom:5px;width: 300px;" type="text" name="fname" value="Name" >
-<div style="color:black;margin-bottom:5px";>Your Email*</div>
-<input style="margin-bottom:5px;width: 300px;" type="text" name="fname" value="Email">
-<div style="color:black;margin-bottom:5px";>Contact Phone</div>
-<input style="margin-bottom:5px;width: 300px;" type="text" name="fname" value="Phone">
+<form id="formUser" class="ceva" >
+							<label for="fname">Your Name*</label>
+							<input type="text"  id="fname" name="firstname">
+							<br></br>
 
-<div id="mes" style="color:black;margin-bottom:5px;display:none";>Message</div>
-<input id="mess" style="margin-bottom:5px;width: 300px;display:none;" type="text" name="fname" value="Message">
+							<label for="email">Your Email*</label>
+							<input type="email" id="email" name="e-mail">
+							<br></br>
 
-</div>
-<div id="mes1" style="float:right;">
-<div  style="color:black;margin-bottom:5px;";>Message</div>
-<input  style="margin-bottom:5px;width: 300px;" type="text" name="fname" value="Message">
-</div>
-<div>
-<button type="button" style="background-color:green;text-align:center;width:300px;border-color:green;" action="demo_form.asp" onsubmit="return validateForm()" method="post">Send Message</button>
-</div>
-</form>
+							<label for="contact_phone">Contact Phone</label>
+							<input type="tel" id="contact_phone" name="phone_number">
+							
+							<br></br>
+							<label for="message">Type your message here!</label>
+							<br></br>
+							<input type="text"  id="message" name="mess">
+							
+							<br></br>
+							<br></br>
+							<input type="submit" value="Send Message" onclick="userForm()">
+						</form>
 </div>
 		</section>		
 	</body>
