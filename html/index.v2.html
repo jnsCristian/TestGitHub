@@ -9,66 +9,20 @@
 		$(document).ready(function(){
 			$(window).resize(function(){
 				var a = $(window).width();
-
 				
-				if(a<1189){
-				$("#mes").show();
-					$("#mess").show();
-					$("#mes1").hide();
+				if(a<1220){
+				$("#mes2").show();
+				$("#mes1").hide();
 				}
-				if(a>=1189){
-				$("#mes").hide();
-					$("#mess").hide();
-					$("#mes1").show();
+				if(a>=1220){
+				$("#mes2").hide();
+				$("#mes1").show();
 				}
 			});
 		});
 		
 		</script>
-		<script>
-		function userForm(){
-	var data=document.forms.formUser.getElementsByTagName("input");
-	var messageForUser="";
-	
-	if ( data[0].value == ''|| data[0].value==null){
-		messageForUser=messageForUser+"Please specify your NAME!";
-	}
-	
-	if(data[1].value=='' || data[1].value==null){
-		messageForUser=messageForUser+'\n'+"Please specify your E-MAIL!";
-	}
-	
-	if(data[3].value==''){
-		messageForUser=messageForUser+'\n'+"Please specify a MESSAGE!";
-	}
-	//verify if the name is a string, the phone number a number and the email is a correct one 
-	var re = /^[A-Za-z]+$/;
-	var re1=/[-!$%^&*()_+|~=`{}\[\]:";'<>?,.\/]/;
-	
-	if(!re.test(data[0].value)){
-		messageForUser=messageForUser+'\n'+"Your name isn't a string!";
-	}
-	
-	if(re.test(data[2].value)){
-		messageForUser=messageForUser+'\n'+"Your phone number isn't a corect one!";
-	}
-	
-	if(re1.test(data[1].value)){
-	messageForUser=messageForUser+'\n'+"Your email isn't a corect one!";
-	}
-	
-	
-	if (messageForUser == ""){
-		alert("Your message had been sent!");
-	}else{
-		alert(messageForUser);
-	}
-	
-	
-	
-};
-}
-	</script>
+
 	</head> 
 	<header >
 		
@@ -110,8 +64,9 @@ Letraset sheets containing Lorem Ipsum passages,and more recently with desktop p
 			<div  class="line"><a id="photo">PHOTOS</a></div>
 			<br>
 			<br>
+			<div id="gallery">
 			<div id="large">
-			<div id="one"><img src="1.jpg" border="5">
+			<div id="one"><img  src="1.jpg" border="5">
 			<h1>LOREM IPSUM IS SIMPLY DUMMY TEXT</h1>
 			<h5>Lorem Ipsum is simply dummy text.Lorem Ipsum is simply dummy text.Lorem Ipsum is simply dummy text.</h5>
 			</div>
@@ -133,6 +88,7 @@ Letraset sheets containing Lorem Ipsum passages,and more recently with desktop p
 			<div id="three"><img src="1.jpg" border="5">
 			<h1>LOREM IPSUM IS SIMPLY DUMMY TEXT</h1>
 			<h5>Lorem Ipsum is simply dummy text.Lorem Ipsum is simply dummy text.Lorem Ipsum is simply dummy text.</h5></div>
+			</div>
 			</div>
 			<div id="large1">
 						<div ><img src="1.jpg" border="5">
@@ -159,34 +115,41 @@ Letraset sheets containing Lorem Ipsum passages,and more recently with desktop p
 			
 			</div>
 
+			
+
 		</section>
 		<section style="background-color:red;">
 			<div id="contact1" class="line">CONTACT US</div>
 <div form class=form style="text-align:left;padding:5%;";>
-<h1 style="text-align:center;color:black;height=42 ;width=42";>Endava 2016!</h1> 
-<form id="formUser" class="ceva" >
-							<label for="fname">Your Name*</label>
-							<input type="text"  id="fname" name="firstname">
-							<br></br>
 
-							<label for="email">Your Email*</label>
-							<input type="email" id="email" name="e-mail">
-							<br></br>
-
-							<label for="contact_phone">Contact Phone</label>
-							<input type="tel" id="contact_phone" name="phone_number">
-							
-							<br></br>
-							<label for="message">Type your message here!</label>
-							<br></br>
-							<input type="text"  id="message" name="mess">
-							
-							<br></br>
-							<br></br>
-							<input type="submit" value="Send Message" onclick="userForm()">
-						</form>
-</div>
-		</section>		
+  <form name="myForm" style="background-color:white">
+  <div style="padding:3%">
+  <h1 style="text-align:center;color:black;height=42 ;width=42";>Endava 2016!</h1> 
+   <div>
+   <label style="color:black;margin-bottom:5px";>Name*</label><br>
+   <input style="margin-bottom:5px;width: 300px;" type="text" name="fname" ><br>
+   </div>
+   <div>
+   <label style="color:black;margin-bottom:5px";>Email*</label><br>
+   <input style="margin-bottom:5px;width: 300px;" type="text" name="fname" ><br>
+   </div>
+   <div>
+   <label style="color:black;margin-bottom:5px";>Phone</label><br>
+   <input style="margin-bottom:5px;width: 300px;" type="text" name="fname" ><br>
+   </div>
+   <div id="mes1" style="float:right;margin-top:-130px;">
+   <label id="mes" style="color:black;margin-bottom:5px";>Message</label><br>
+   <input id="mess" style="margin-bottom:5px;width: 300px;height:100px;" type="text" name="fname" >
+   </div>
+   <div id="mes2" style="display:none">
+   <label id="mes" style="color:black;margin-bottom:5px";>Message</label><br>
+   <input id="mess" style="margin-bottom:5px;width: 300px;" type="text" name="fname" >
+   </div>
+   <div><button type="button" style="background-color:green;width:300px;border-color:green;">Send Message</button></div>
+  </div>
+  </form>
+ </div>
+ 		</section>			
 	</body>
 	<footer text-align:"center" style="color:white;">
 		<div id="meniu_footer"  >

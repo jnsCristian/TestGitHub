@@ -115,10 +115,37 @@ div#large{
 	display:none;
 }
 div#large1{
+	
 	display:inline;
 	text-align:center;
 }
 div#useless{
 	height:2200px;
 }
+div#gallery {
+  
+  margin-top:-1000px;
+ 
+} 
+}
+
+div#gallery {
+  
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+} 
+
+@media screen and (max-device-width: 1400px) 
+{
+div#gallery {
+  
+  height:1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+} 
 }
